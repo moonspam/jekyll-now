@@ -9,8 +9,17 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <link href='//cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <script src="https://cdn.rawgit.com/toddmotto/fluidvids/master/dist/fluidvids.min.js"></script>
+    <script>
+      fluidvids.init({
+        selector: ['iframe', 'object'], // runs querySelectorAll()
+        players: ['www.youtube.com', 'player.vimeo.com'] // players to support
+      });
+    </script>
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
