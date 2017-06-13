@@ -7,7 +7,7 @@ title: 나눔스퀘어 웹폰트 공유(rawgit)
 
 # NanumSquare
 
-> 반듯한 직선으로 제목에 잘 어울리며 모바일에서도 잘 보이는 글꼴입니다. 꼭 필요한 2,350자만을 추려 용량을 가볍게 줄였고 웹 환경에서 보다 편리하게 사용 가능합니다. http://hangeul.naver.com/2016/nanum
+> 반듯한 직선으로 제목에 잘 어울리며 모바일에서도 잘 보이는 글꼴입니다. 꼭 필요한 2,350자만을 추려 용량을 가볍게 줄였고 웹 환경에서 보다 편리하게 사용 가능합니다. <http://hangeul.naver.com/2016/nanum>
 
 ## 옵션
 
@@ -39,4 +39,4 @@ body        { font-family: 'NanumSquare', sans-serif; }
 .light      { font-weight: 300 }
 ```
 
-출처: https://github.com/moonspam/NanumSquare
+출처: <https://github.com/moonspam/NanumSquare>
