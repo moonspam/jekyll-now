@@ -172,7 +172,7 @@ img {
   @include mobile {
     float: none;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 10px;
   }
 
   img {
@@ -253,12 +253,15 @@ nav {
 
 .post {
   blockquote {
-    margin: 1.8em .8em;
+    margin: 1em 0;
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
     color: $gray;
     font-size: 22px;
-    font-style: italic;
+  }
+
+  .entry {
+    padding-bottom: 1em;
   }
 
   .comments {
