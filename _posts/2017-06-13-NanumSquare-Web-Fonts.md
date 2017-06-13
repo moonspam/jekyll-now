@@ -39,4 +39,4 @@ body        { font-family: 'NanumSquare', sans-serif; }
 .light      { font-weight: 300 }
 ```
 
-> 출처: https://github.com/moonspam/NanumSquare
+출처: https://github.com/moonspam/NanumSquare
