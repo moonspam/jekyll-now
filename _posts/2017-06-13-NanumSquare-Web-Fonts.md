@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 나눔스퀘어 웹폰트 공유(rawgit)
-tag: [NanumSquare, Fonts]
+tag: [nanumSquare, fonts]
 ---
 
 나눔 스퀘어 웹폰트 Light 글씨체를 써야 할 일이 종종 있어 구글링으로 찾는 것보다 만드는 게 빠를 것 같아 Github에 웹폰트를 올리고 rawgit을 이용해 사용하고 있다.
