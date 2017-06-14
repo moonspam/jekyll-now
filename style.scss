@@ -303,18 +303,20 @@ footer {
 }
 
 .tag {
-  margin-right: 4px;
+  margin-right: 2px;
   span {
     display: inline-block;
-    padding: 0.05em 0.8em 0.2em;
-    line-height: 1.4em;
-    font-size: 1em;
+    padding: 0.3em 0.8em 0.2em;
+    line-height: 1.5em;
+    font-size: 0.75em;
     color: $white;
   }
   > span {
     background-color: #546E7A;
+    font-weight: bold;
     + span {
       background-color: #78909C;
+      font-weight: 300;
     }
   }
   &:hover {
