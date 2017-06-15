@@ -30,14 +30,7 @@ Regular(400), Bold(700), Extra Bold(800), Light(300) 지원됩니다.
 
 ## 적용
 
-### CSS (예)
-
-```css
-body        { font-family: 'NanumSquare', sans-serif; }
-.normal     { font-weight: 400 }
-.bold       { font-weight: 700 }
-.bolder     { font-weight: 800 }
-.light      { font-weight: 300 }
-```
+<p data-height="255" data-theme-id="dark" data-slug-hash="rwMRVW" data-default-tab="css,result" data-user="moonspam" data-embed-version="2" data-pen-title="rwMRVW" class="codepen">See the Pen <a href="https://codepen.io/moonspam/pen/rwMRVW/">rwMRVW</a> by moonspam (<a href="https://codepen.io/moonspam">@moonspam</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async="async" src="//codepen.io/assets/embed/ei.js"></script>
 
 출처: <https://github.com/moonspam/NanumSquare>
