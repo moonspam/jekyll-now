@@ -96,9 +96,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   <a name='2.1'></a>
   - [2.1](#2.1) 모든 참조는 `const` 를 사용하고, `var` 를 사용하지 마십시오.
 
-  > Why? This ensures that you can't reassign your references, which can lead to bugs and difficult to comprehend code.
-
-  > 왜? 참조를 재할당 할 수 없으므로, 버그로 이어지고 이해하기 어려운 코드가 되는것을 방지합니다.
+    > 왜? 참조를 재할당 할 수 없으므로, 버그로 이어지고 이해하기 어려운 코드가 되는것을 방지합니다.
 
     ```javascript
     // bad
@@ -113,9 +111,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   <a name='2.2'></a>
   - [2.2](#2.2) 참조를 재할당 해야한다면 `var` 대신 `let` 을 사용하십시오.
 
-  > Why? `let` is block-scoped rather than function-scoped like `var`.
-
-  > 왜? `var` 같은 함수스코프 보다는 오히려 블록스코프의 `let`
+    > 왜? `var` 같은 함수스코프 보다는 오히려 블록스코프의 `let`
 
     ```javascript
     // bad
