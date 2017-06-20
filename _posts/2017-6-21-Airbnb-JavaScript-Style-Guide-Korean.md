@@ -56,8 +56,8 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
 ## 형(Types)
 
-  - [1.1](#1.1) <a name='1.1'></a> **Primitives**: When you access a primitive type you work directly on its value.
-  - [1.1](#1.1) <a name='1.1'></a> **Primitives**: primitive type은 그 값을 직접 조작합니다.
+  <a name='1.1'></a>
+  - [1.1](#1.1) **Primitives**: primitive type은 그 값을 직접 조작합니다.
     + `string`
     + `number`
     + `boolean`
@@ -72,8 +72,9 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
     console.log(foo, bar); // => 1, 9
     ```
-  - [1.2](#1.2) <a name='1.2'></a> **Complex**: When you access a complex type you work on a reference to its value.
-  - [1.2](#1.2) <a name='1.2'></a> **참조형**: 참조형(Complex)은 참조를 통해 값을 조작합니다.
+
+  <a name='1.2'></a>
+  - [1.2](#1.2) **참조형**: 참조형(Complex)은 참조를 통해 값을 조작합니다.
 
     + `object`
     + `array`
@@ -92,8 +93,8 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
 ## 참조(References)
 
-  - [2.1](#2.1) <a name='2.1'></a> Use `const` for all of your references; avoid using `var`.
-  - [2.1](#2.1) <a name='2.1'></a> 모든 참조는 `const` 를 사용하고, `var` 를 사용하지 마십시오.
+  <a name='2.1'></a>
+  - [2.1](#2.1) 모든 참조는 `const` 를 사용하고, `var` 를 사용하지 마십시오.
 
   > Why? This ensures that you can't reassign your references, which can lead to bugs and difficult to comprehend code.
 
@@ -109,8 +110,8 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
     const b = 2;
     ```
 
-  - [2.2](#2.2) <a name='2.2'></a> If you must reassign references, use `let` instead of `var`.
-  - [2.2](#2.2) <a name='2.2'></a> 참조를 재할당 해야한다면 `var` 대신 `let` 을 사용하십시오.
+  <a name='2.2'></a>
+  - [2.2](#2.2) 참조를 재할당 해야한다면 `var` 대신 `let` 을 사용하십시오.
 
   > Why? `let` is block-scoped rather than function-scoped like `var`.
 
@@ -130,8 +131,8 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
     }
     ```
 
-  - [2.3](#2.3) <a name='2.3'></a> Note that both `let` and `const` are block-scoped.
-  - [2.3](#2.3) <a name='2.3'></a> `let` 과 `const` 는 같이 블록스코프라는것을 유의하십시오.
+  <a name='2.3'></a>
+  - [2.3](#2.3) `let` 과 `const` 는 같이 블록스코프라는것을 유의하십시오.
 
     ```javascript
     // const and let only exist in the blocks they are defined in.
@@ -496,6 +497,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
       return `How are you, ${name}?`;
     }
     ```
+
   - [6.5](#6.5) <a name='6.5'></a> Never use `eval()` on a string, it opens too many vulnerabilities.
   - [6.5](#6.5) <a name='6.5'></a> 절대로 `eval()` 을 이용하지 마십시오. 이것은 많은 취약점을 만들기 때문입니다.
 
