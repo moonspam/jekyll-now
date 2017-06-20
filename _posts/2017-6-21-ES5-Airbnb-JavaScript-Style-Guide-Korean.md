@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ES5 - Airbnb JavaScript 스타일 가이드 한국어 번역
+title: ES5 - Airbnb JavaScript 스타일 가이드 한국어 번역본
 tag: [Javascript, ESLint, Airbnb, Guide, ES5]
 ---
 
