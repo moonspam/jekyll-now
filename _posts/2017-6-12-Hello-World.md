@@ -3,10 +3,10 @@ layout: post
 title: Hello World
 ---
 
-GitHub Pages를 기웃거리다 <a href="https://jekyllrb.com/" target="_blank">지킬로(Jekyll)</a>를 이용해 쉽게 사이트를 구축할 수 있다는 글을 발견하여 삽을 들기로 했다.
+GitHub Pages를 기웃거리다 <a href="https://jekyllrb.com/" target="_blank">지킬로(Jekyll)</a>를 이용해 쉽게 사이트를 구축할 수 있다는 글을 발견하여 삽을 들기로 했다.  
 Jekll를 둘러보는데 Ruby를 설치해야 하고 여러모로 귀찮아서 <a href="https://github.com/barryclark/jekyll-now" target="_blank">Jekyll Now</a>를 통해 더욱 쉽게 구축하였다.
 
-특히 한량넷이 나에게 친절하게 알려주었다.
+특히 한량넷이 나에게 친절하게 알려주었다.  
 <http://www.halryang.net/Jekyll-Blogging-For-Beginners/>
 
 지킬로가 얼마나 쉽냐면...
