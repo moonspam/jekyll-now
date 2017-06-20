@@ -626,21 +626,21 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [7.8](#7.8) <a name='7.8'></a> Avoid side effects with default parameters.
   - [7.8](#7.8) <a name='7.8'></a> side effect가 있을 default 파라메터의 이용은 피해 주십시오.
 
-  > Why? They are confusing to reason about.
+    > Why? They are confusing to reason about.
 
-  > 왜? 혼란을 야기하기 때문입니다.
+    > 왜? 혼란을 야기하기 때문입니다.
 
-  ```javascript
-  var b = 1;
-  // bad
-  function count(a = b++) {
-    console.log(a);
-  }
-  count();  // 1
-  count();  // 2
-  count(3); // 3
-  count();  // 3
-  ```
+    ```javascript
+    var b = 1;
+    // bad
+    function count(a = b++) {
+      console.log(a);
+    }
+    count();  // 1
+    count();  // 2
+    count(3); // 3
+    count();  // 3
+    ```
 
   - [7.9](#7.9) <a name='7.9'></a> Always put default parameters last.
   - [7.9](#7.9) <a name='7.9'></a> 항상 default 파라메터는 뒤쪽에 두십시오.
@@ -657,20 +657,20 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
     }
     ```
 
-- [7.10](#7.10) <a name='7.10'></a> Never use the Function constructor to create a new function.
-- [7.10](#7.10) <a name='7.10'></a> 절대 새 함수를 작성하기 위해 Function constructor를 이용하지 마십시오.
+  - [7.10](#7.10) <a name='7.10'></a> Never use the Function constructor to create a new function.
+  - [7.10](#7.10) <a name='7.10'></a> 절대 새 함수를 작성하기 위해 Function constructor를 이용하지 마십시오.
 
-  > Why? Creating a function in this way evaluates a string similarly to eval(), which opens vulnerabilities.
+    > Why? Creating a function in this way evaluates a string similarly to eval(), which opens vulnerabilities.
 
-  > 왜? 이 방법으로 문자열을 평가시켜 새 함수를 작성하는것은 eval() 과 같은 수준의 취약점을 일으킬 수 있습니다.
+    > 왜? 이 방법으로 문자열을 평가시켜 새 함수를 작성하는것은 eval() 과 같은 수준의 취약점을 일으킬 수 있습니다.
 
-  ```javascript
-  // bad
-  var add = new Function('a', 'b', 'return a + b');
+    ```javascript
+    // bad
+    var add = new Function('a', 'b', 'return a + b');
 
-  // still bad
-  var subtract = Function('a', 'b', 'return a - b');
-  ```
+    // still bad
+    var subtract = Function('a', 'b', 'return a - b');
+    ```
 
 **[⬆ back to top](#목차)**
 
@@ -2180,8 +2180,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 ## 이벤트(Events)
 
   - [24.1](#24.1) <a name='24.1'></a> When attaching data payloads to events (whether DOM events or something more proprietary like Backbone events), pass a hash instead of a raw value. This allows a subsequent contributor to add more data to the event payload without finding and updating every handler for the event. For example, instead of:
-  - [24.1](#24.1) <a name='24.1'></a> (DOM이벤트나 Backbone events 와 같은 독자의) 이벤트로 payload의 값을 넘길 경우는 raw값 보다는 해시값을 넘겨 주십시오.
-이렇게 함으로써, 이후 기여자가 이벤트에 관련한 모든 핸들러를 찾아서 갱신하는 대신 이벤트 payload에 값을 추가하는 것이 가능합니다. 예를들면 아래와 같이
+  - [24.1](#24.1) <a name='24.1'></a> (DOM이벤트나 Backbone events 와 같은 독자의) 이벤트로 payload의 값을 넘길 경우는 raw값 보다는 해시값을 넘겨 주십시오. 이렇게 함으로써, 이후 기여자가 이벤트에 관련한 모든 핸들러를 찾아서 갱신하는 대신 이벤트 payload에 값을 추가하는 것이 가능합니다. 예를들면 아래와 같이
 
     ```javascript
     // bad
