@@ -64,7 +64,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
     + `null`
     + `undefined`
 
-    ``` javascript
+    ```javascript
     const foo = 1;
     let bar = foo;
 
@@ -79,7 +79,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
     + `array`
     + `function`
 
-    ``` javascript
+    ```javascript
     const foo = [1, 2];
     const bar = foo;
 
@@ -99,7 +99,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
   > 왜? 참조를 재할당 할 수 없으므로, 버그로 이어지고 이해하기 어려운 코드가 되는것을 방지합니다.
 
-    ``` javascript
+    ```javascript
     // bad
     var a = 1;
     var b = 2;
@@ -116,7 +116,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
   > 왜? `var` 같은 함수스코프 보다는 오히려 블록스코프의 `let`
 
-    ``` javascript
+    ```javascript
     // bad
     var count = 1;
     if (true) {
@@ -133,7 +133,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [2.3](#2.3) <a name='2.3'></a> Note that both `let` and `const` are block-scoped.
   - [2.3](#2.3) <a name='2.3'></a> `let` 과 `const` 는 같이 블록스코프라는것을 유의하십시오.
 
-    ``` javascript
+    ```javascript
     // const and let only exist in the blocks they are defined in.
     // const 와 let 은 선언된 블록의 안에서만 존재합니다.
     {
@@ -151,7 +151,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [3.1](#3.1) <a name='3.1'></a> Use the literal syntax for object creation.
   - [3.1](#3.1) <a name='3.1'></a> 오브젝트를 작성할때는, 리터럴 구문을 사용하십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     const item = new Object();
 
@@ -162,7 +162,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [3.2](#3.2) <a name='3.2'></a> If your code will be executed in browsers in script context, don't use [reserved words](http://es5.github.io/#x7.6.1) as keys. It won't work in IE8. [More info](https://github.com/airbnb/javascript/issues/61). It’s OK to use them in ES6 modules and server-side code.
   - [3.2](#3.2) <a name='3.2'></a> 코드가 브라우저상의 스크립트로 실행될때 [예약어](http://es5.github.io/#x7.6.1)를 키로 이용하지 마십시오. IE8에서 작동하지 않습니다. [More info](https://github.com/airbnb/javascript/issues/61) 하지만 ES6 모듈안이나 서버사이드에서는 이용가능합니다.
 
-    ``` javascript
+    ```javascript
     // bad
     const superman = {
       default: { clark: 'kent' },
@@ -179,7 +179,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [3.3](#3.3) <a name='3.3'></a> Use readable synonyms in place of reserved words.
   - [3.3](#3.3) <a name='3.3'></a> 예약어 대신 알기쉬운 동의어를 사용해 주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     const superman = {
       class: 'alien',
@@ -204,7 +204,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
   > 왜? 오브젝트의 모든 프로퍼티를 한 장소에서 정의 할 수 있습니다.
 
-    ``` javascript
+    ```javascript
     function getKey(k) {
       return a `key named ${k}`;
     }
@@ -228,7 +228,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [3.5](#3.5) <a name='3.5'></a> Use object method shorthand.
   - [3.5](#3.5) <a name='3.5'></a> 메소드의 단축구문을 이용해 주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     const atom = {
       value: 1,
@@ -256,7 +256,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
   > 왜? 기술과 설명이 간결해지기 때문입니다.
 
-    ``` javascript
+    ```javascript
     const lukeSkywalker = 'Luke Skywalker';
 
     // bad
@@ -277,7 +277,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
   > 왜? 어떤 프로퍼티가 단축구문을 이용하고 있는지가 알기쉽기 때문입니다.
 
-    ``` javascript
+    ```javascript
     const anakinSkywalker = 'Anakin Skywalker';
     const lukeSkywalker = 'Luke Skywalker';
 
@@ -309,7 +309,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [4.1](#4.1) <a name='4.1'></a> Use the literal syntax for array creation.
   - [4.1](#4.1) <a name='4.1'></a> 배열을 작성 할 때는 리터럴 구문을 사용해 주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     const items = new Array();
 
@@ -320,7 +320,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [4.2](#4.2) <a name='4.2'></a> Use Array#push instead of direct assignment to add items to an array.
   - [4.2](#4.2) <a name='4.2'></a> 직접 배열에 항목을 대입하지 말고, Array#push를 이용해 주십시오.
 
-    ``` javascript
+    ```javascript
     const someStack = [];
 
     // bad
@@ -335,7 +335,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   <a name="es6-array-spreads"></a>
   - [4.3](#4.3) <a name='4.3'></a> 배열을 복사할때는 배열의 확장연산자 `...` 를 이용해 주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     const len = items.length;
     const itemsCopy = [];
@@ -352,7 +352,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [4.4](#4.4) <a name='4.4'></a> To convert an array-like object to an array, use Array#from.
   - [4.4](#4.4) <a name='4.4'></a> array-like 오브젝트를 배열로 변환하는 경우는 Array#from을 이용해 주십시오.
 
-    ``` javascript
+    ```javascript
     const foo = document.querySelectorAll('.foo');
     const nodes = Array.from(foo);
     ```
@@ -368,7 +368,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
   > 왜? 구조화대입을 이용하는 것으로 프로퍼티를 위한 임시적인 참조의 작성을 줄일 수 있습니다.
 
-    ``` javascript
+    ```javascript
     // bad
     function getFullName(user) {
       const firstName = user.firstName;
@@ -392,7 +392,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [5.2](#5.2) <a name='5.2'></a> Use array destructuring.
   - [5.2](#5.2) <a name='5.2'></a> 배열의 구조화대입을 이용해 주십시오.
 
-    ``` javascript
+    ```javascript
     const arr = [1, 2, 3, 4];
 
     // bad
@@ -410,7 +410,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
   > 왜? 이렇게 함으로써 나중에 호출처에 영향을 주지않고 새로운 프로퍼티를 추가하거나 순서를 변경할수 있습니다.
 
-    ``` javascript
+    ```javascript
     // bad
     function processInput(input) {
       // then a miracle occurs
@@ -442,7 +442,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [6.1](#6.1) <a name='6.1'></a> Use single quotes `''` for strings.
   - [6.1](#6.1) <a name='6.1'></a> 문자열에는 싱크쿼트 `''` 를 사용해 주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     const name = "Capt. Janeway";
 
@@ -456,7 +456,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [6.3](#6.3) <a name='6.3'></a> Note: If overused, long strings with concatenation could impact performance. [jsPerf](http://jsperf.com/ya-string-concat) & [Discussion](https://github.com/airbnb/javascript/issues/40).
   - [6.3](#6.3) <a name='6.3'></a> 주의: 문자연결을 과용하면 성능에 영향을 미칠 수 있습니다. [jsPerf](http://jsperf.com/ya-string-concat) & [Discussion](https://github.com/airbnb/javascript/issues/40).
 
-    ``` javascript
+    ```javascript
     // bad
     const errorMessage = 'This is a super long error that was thrown because of Batman. When you stop to think about how Batman had anything to do with this, you would get nowhere fast.';
 
@@ -480,7 +480,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
   > 왜? Template strings 는 문자열 보간기능과 적절한 줄바꿈 기능을 갖는 간결한 구문으로 가독성이 좋기 때문입니다.
 
-    ``` javascript
+    ```javascript
     // bad
     function sayHi(name) {
       return 'How are you, ' + name + '?';
@@ -512,7 +512,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   > 왜? 이름이 부여된 함수선언은 콜스택에서 간단하게 확인하는 것이 가능합니다. 또한 함수선언은 함수의 본체가 hoist 되어집니다. 그에 반해 함수식은 참조만이 hoist 되어집니다.
   이 룰에 의해 함수식의 부분을 항상 [Arrow함수](#arrow함수arrow-functions)에서 이용하는것이 가능합니다.
 
-    ``` javascript
+    ```javascript
     // bad
     const foo = function () {
     };
@@ -525,7 +525,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [7.2](#7.2) <a name='7.2'></a> Function expressions:
   - [7.2](#7.2) <a name='7.2'></a> 함수식
 
-    ``` javascript
+    ```javascript
     // immediately-invoked function expression (IIFE)
     // 즉시 실행 함수식(IIFE)
     (() => {
@@ -539,7 +539,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [7.4](#7.4) <a name='7.4'></a> **Note:** ECMA-262 defines a `block` as a list of statements. A function declaration is not a statement. [Read ECMA-262's note on this issue](http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf#page=97).
   - [7.4](#7.4) <a name='7.4'></a> **주의:** ECMA-262 사양에서는 `block` 은 statements의 일람으로 정의되어 있지만 함수선언은 statements 가 아닙니다. [Read ECMA-262's note on this issue](http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf#page=97).
 
-    ``` javascript
+    ```javascript
     // bad
     if (currentUser) {
       function test() {
@@ -559,7 +559,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [7.5](#7.5) <a name='7.5'></a> Never name a parameter `arguments`. This will take precedence over the `arguments` object that is given to every function scope.
   - [7.5](#7.5) <a name='7.5'></a> 절대 파라메터에 `arguments` 를 지정하지 마십시오. 이것은 함수스코프에 전해지는  `arguments` 오브젝트의 참조를 덮어써 버립니다.
 
-    ``` javascript
+    ```javascript
     // bad
     function nope(name, options, arguments) {
       // ...stuff...
@@ -579,7 +579,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
   > 왜? `...` 을 이용하는것으로 몇개의 파라메터를 이용하고 싶은가를 확실하게 할 수 있습니다. 더해서 rest 파라메터는 `arguments` 와 같은 Array-like 오브젝트가 아닌 진짜 Array 입니다.
 
-    ``` javascript
+    ```javascript
     // bad
     function concatenateAll() {
       const args = Array.prototype.slice.call(arguments);
@@ -596,7 +596,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [7.7](#7.7) <a name='7.7'></a> Use default parameter syntax rather than mutating function arguments.
   - [7.7](#7.7) <a name='7.7'></a> 함수의 파라메터를 변이시키는 것보다 default 파라메터를 이용해 주십시오.
 
-    ``` javascript
+    ```javascript
     // really bad
     function handleThings(opts) {
       // No! We shouldn't mutate function arguments.
@@ -631,7 +631,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
   > 왜? 혼란을 야기하기 때문입니다.
 
-  ``` javascript
+  ```javascript
   var b = 1;
   // bad
   function count(a = b++) {
@@ -646,7 +646,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [7.9](#7.9) <a name='7.9'></a> Always put default parameters last.
   - [7.9](#7.9) <a name='7.9'></a> 항상 default 파라메터는 뒤쪽에 두십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     function handleThings(opts = {}, name) {
       // ...
@@ -665,7 +665,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
   > 왜? 이 방법으로 문자열을 평가시켜 새 함수를 작성하는것은 eval() 과 같은 수준의 취약점을 일으킬 수 있습니다.
 
-  ``` javascript
+  ```javascript
   // bad
   var add = new Function('a', 'b', 'return a + b');
 
@@ -688,7 +688,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
   > 이용해야만 하지 않나？ 복잡한 함수에서 로직을 정의한 함수의 바깥으로 이동하고 싶을때.
 
-    ``` javascript
+    ```javascript
     // bad
     [1, 2, 3].map(function (x) {
       const y = x + 1;
@@ -713,7 +713,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
   > 사용해야만 하지 않아? 오브젝트를 반환할때.
 
-    ``` javascript
+    ```javascript
     // good
     [1, 2, 3].map(number => `A string containing the ${number}.`);
 
@@ -737,7 +737,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
   > 왜? 함수의 개시와 종료부분이 알기쉽게 보이기 때문입니다.
 
-    ``` javascript
+    ```javascript
     // bad
     [1, 2, 3].map(number => 'As time went by, the string containing the ' +
       `${number} became much longer. So we needed to break it over multiple ` +
@@ -758,7 +758,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
   > 왜? 별로 보기 어렵지 않기 때문입니다.
 
-    ``` javascript
+    ```javascript
     // good
     [1, 2, 3].map(x => x * x);
 
@@ -778,7 +778,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
   > 왜? `class` 구문은 간결하고 의미를 알기 쉽기 때문입니다.
 
-    ``` javascript
+    ```javascript
     // bad
     function Queue(contents = []) {
       this._queue = [...contents];
@@ -809,7 +809,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
   > 왜? `instanceof` 를 파괴하지 않고 프로토타입 상속을 하기 위해 빌트인 된 방법이기 때문입니다.
 
-    ``` javascript
+    ```javascript
     // bad
     const inherits = require('inherits');
     function PeekableQueue(contents) {
@@ -831,7 +831,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [9.3](#9.3) <a name='9.3'></a> Methods can return `this` to help with method chaining.
   - [9.3](#9.3) <a name='9.3'></a> 메소드의 반환값으로 `this` 를 반환하는 것으로 메소드채이닝을 할 수 있습니다.
 
-    ``` javascript
+    ```javascript
     // bad
     Jedi.prototype.jump = function() {
       this.jumping = true;
@@ -869,7 +869,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [9.4](#9.4) <a name='9.4'></a> It's okay to write a custom toString() method, just make sure it works successfully and causes no side effects.
   - [9.4](#9.4) <a name='9.4'></a> 독자의 toString()을 작성하는것을 허용하지만 올바르게 동작하는지와 side effect 가 없는지만 확인해 주십시오.
 
-    ``` javascript
+    ```javascript
     class Jedi {
       constructor(options = {}) {
         this.name = options.name || 'no name';
@@ -897,7 +897,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
   > 왜? 모듈은 미래가 있습니다. 지금 그 미래를 사용하여 시작합시다.
 
-    ``` javascript
+    ```javascript
     // bad
     const AirbnbStyleGuide = require('./AirbnbStyleGuide');
     module.exports = AirbnbStyleGuide.es6;
@@ -918,7 +918,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
   > 왜? single default export 임을 주의할 필요가 있습니다.
 
-    ``` javascript
+    ```javascript
     // bad
     import * as AirbnbStyleGuide from './AirbnbStyleGuide';
 
@@ -933,7 +933,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
   > 왜? 한줄짜리는 간결하지만 import 와 export 방법을 명확히 한가지로 해서 일관성을 갖는 것이 가능합니다.
 
-    ``` javascript
+    ```javascript
     // bad
     // filename es6.js
     export { es6 as default } from './airbnbStyleGuide';
@@ -955,7 +955,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
   > 왜? 고급함수는 immutable(불변)룰을 적용합니다. side effect에 대해 추측하는거보다 값을 반환하는 순수 함수를 다루는게 간단하기 때문입니다.
 
-    ``` javascript
+    ```javascript
     const numbers = [1, 2, 3, 4, 5];
 
     // bad
@@ -991,7 +991,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [12.1](#12.1) <a name='12.1'></a> Use dot notation when accessing properties.
   - [12.1](#12.1) <a name='12.1'></a> 프로퍼티에 억세스하는 경우는 점 `.` 을 사용해 주십시오.
 
-    ``` javascript
+    ```javascript
     const luke = {
       jedi: true,
       age: 28,
@@ -1007,7 +1007,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [12.2](#12.2) <a name='12.2'></a> Use subscript notation `[]` when accessing properties with a variable.
   - [12.2](#12.2) <a name='12.2'></a> 변수를 사용해 프로퍼티에 억세스하는 경우는 대괄호 `[]` 를 사용해 주십시오.
 
-    ``` javascript
+    ```javascript
     const luke = {
       jedi: true,
       age: 28,
@@ -1028,7 +1028,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [13.1](#13.1) <a name='13.1'></a> Always use `const` to declare variables. Not doing so will result in global variables. We want to avoid polluting the global namespace. Captain Planet warned us of that.
   - [13.1](#13.1) <a name='13.1'></a> 변수를 선언 할 때는 항상 `const` 를 사용해 주십시오. 그렇게 하지 않으면 글로벌 변수로 선언됩니다. 글로벌 namespace 를 오염시키지 않도록 캡틴플래닛도 경고하고 있습니다.
 
-    ``` javascript
+    ```javascript
     // bad
     superPower = new SuperPower();
 
@@ -1043,7 +1043,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
     > 왜? 이 방법의 경우, 간단히 새 변수를 추가하는게 가능합니다. 또한 `,` 를 `;` 로 바꿔버리는 것에 대해 걱정할 필요가 없습니다.
 
-    ``` javascript
+    ```javascript
     // bad
     const items = getItems(),
         goSportsTeam = true,
@@ -1068,7 +1068,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
   > 왜? 이전에 할당한 변수에 대해 나중에 새 변수를 추가하는 경우에 유용하기 때문입니다.
 
-    ``` javascript
+    ```javascript
     // bad
     let i, len, dragonball,
         items = getItems(),
@@ -1096,7 +1096,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
   > 왜? `let` 과 `const` 는 블록스코프이기 때문입니다. 함수스코프가 아닙니다.
 
-    ``` javascript
+    ```javascript
     // good
     function() {
       test();
@@ -1148,7 +1148,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [14.1](#14.1) <a name='14.1'></a> `var` declarations get hoisted to the top of their scope, their assignment does not. `const` and `let` declarations are blessed with a new concept called [Temporal Dead Zones (TDZ)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#Temporal_dead_zone_and_errors_with_let). It's important to know why [typeof is no longer safe](http://es-discourse.com/t/why-typeof-is-no-longer-safe/15).
   - [14.1](#14.1) <a name='14.1'></a> `var` 선언은 할당이 없이 스코프의 선두에 hoist 됩니다. `const` 와 `let` 선언은[Temporal Dead Zones (TDZ)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#Temporal_dead_zone_and_errors_with_let) 라고 불리는 새로운 컨셉의 혜택을 받고 있습니다. 이것은 [왜 typeof 는 더이상 안전하지 않은가](http://es-discourse.com/t/why-typeof-is-no-longer-safe/15)를  알고있는 것이 중요합니다.
 
-    ``` javascript
+    ```javascript
     // we know this wouldn't work (assuming there
     // is no notDefined global variable)
     // (notDefined 가 글로벌변수에 존재하지 않는다고 판정한 경우.)
@@ -1192,7 +1192,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [14.2](#14.2) <a name='14.2'></a> Anonymous function expressions hoist their variable name, but not the function assignment.
   - [14.2](#14.2) <a name='14.2'></a> 무명함수의 경우 함수가 할당되기 전의 변수가 hoist 됩니다.
 
-    ``` javascript
+    ```javascript
     function example() {
       console.log(anonymous); // => undefined
 
@@ -1207,7 +1207,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [14.3](#14.3) <a name='14.3'></a> Named function expressions hoist the variable name, not the function name or the function body.
   - [14.3](#14.3) <a name='14.3'></a> 명명함수의 경우도 똑같이 변수가 hoist 됩니다. 함수명이나 함수본체는 hoist 되지 않습니다.
 
-    ``` javascript
+    ```javascript
     function example() {
       console.log(named); // => undefined
 
@@ -1237,7 +1237,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [14.4](#14.4) <a name='14.4'></a> Function declarations hoist their name and the function body.
   - [14.4](#14.4) <a name='14.4'></a> 함수선언은 함수명과 함수본체가 hoist 됩니다.
 
-    ``` javascript
+    ```javascript
     function example() {
       superPower(); // => Flying
 
@@ -1273,7 +1273,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
     + **수치** 는 **true** 로 평가됩니다. 하지만 **+0, -0, or NaN** 의 경우는 **false** 입니다.
     + **문자열** 은 **true** 로 평가됩니다. 하지만 빈문자 `''` 의 경우는 **false** 입니다.
 
-    ``` javascript
+    ```javascript
     if ([0]) {
       // true
       // An array is an object, objects evaluate to true
@@ -1284,7 +1284,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [15.3](#15.3) <a name='15.3'></a> Use shortcuts.
   - [15.3](#15.3) <a name='15.3'></a> 단축형을 사용해 주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     if (name !== '') {
       // ...stuff...
@@ -1317,7 +1317,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [16.1](#16.1) <a name='16.1'></a> Use braces with all multi-line blocks.
   - [16.1](#16.1) <a name='16.1'></a> 복수행의 블록에는 중괄호 ({}) 를 사용해 주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     if (test)
       return false;
@@ -1343,7 +1343,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
     `if` block's closing brace.
   - [16.2](#16.2) <a name='16.2'></a> 복수행 블록의 `if` 와 `else` 를 이용하는 경우 `else` 는 `if` 블록 끝의 중괄호(})와 같은 행에 위치시켜 주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     if (test) {
       thing1();
@@ -1371,7 +1371,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [17.1](#17.1) <a name='17.1'></a> Use `/** ... */` for multi-line comments. Include a description, specify types and values for all parameters and return values.
   - [17.1](#17.1) <a name='17.1'></a> 복수행의 코멘트는 `/** ... */` 을 사용해 주십시오. 그 안에는 설명과 모든 파라메터, 반환값에 대해 형이나 값을 기술해 주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     // make() returns a new element
     // based on the passed in tag name
@@ -1404,7 +1404,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [17.2](#17.2) <a name='17.2'></a> Use `//` for single line comments. Place single line comments on a newline above the subject of the comment. Put an empty line before the comment unless it's on the first line of a block.
   - [17.2](#17.2) <a name='17.2'></a> 단일행 코멘트에는 `//` 을 사용해 주십시오. 코멘트를 추가하고 싶은 코드의 상부에 배치해 주십시오. 또한, 코멘트의 앞에 빈행을 넣어 주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     const active = true;  // is current tab
 
@@ -1446,7 +1446,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [17.4](#17.4) <a name='17.4'></a> Use `// FIXME:` to annotate problems.
   - [17.4](#17.4) <a name='17.4'></a> 문제에 대한 주석으로써 `// FIXME:` 를 사용해 주십시오.
 
-    ``` javascript
+    ```javascript
     class Calculator extends Abacus {
       constructor() {
         super();
@@ -1461,7 +1461,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [17.5](#17.5) <a name='17.5'></a> Use `// TODO:` to annotate solutions to problems.
   - [17.5](#17.5) <a name='17.5'></a> 문제의 해결책에 대한 주석으로 `// TODO:` 를 사용해 주십시오.
 
-    ``` javascript
+    ```javascript
     class Calculator extends Abacus {
       constructor() {
         super();
@@ -1481,7 +1481,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [18.1](#18.1) <a name='18.1'></a> Use soft tabs set to 2 spaces.
   - [18.1](#18.1) <a name='18.1'></a> 탭에는 스페이스 2개를 설정해 주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     function() {
     ∙∙∙∙const name;
@@ -1501,7 +1501,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [18.2](#18.2) <a name='18.2'></a> Place 1 space before the leading brace.
   - [18.2](#18.2) <a name='18.2'></a> 주요 중괄호 ({}) 앞에는 스페이스를 1개 넣어 주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     function test(){
       console.log('test');
@@ -1528,7 +1528,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [18.3](#18.3) <a name='18.3'></a> Place 1 space before the opening parenthesis in control statements (`if`, `while` etc.). Place no space before the argument list in function calls and declarations.
   - [18.3](#18.3) <a name='18.3'></a> 제어구문 (`if` 문이나 `while` 문 등) 의 소괄호 (()) 앞에는 스페이스를 1개 넣어 주십시오. 함수선언이나 함수호출시 인수리스트의 앞에는 스페이스를 넣지 마십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     if(isJedi) {
       fight ();
@@ -1553,7 +1553,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [18.4](#18.4) <a name='18.4'></a> Set off operators with spaces.
   - [18.4](#18.4) <a name='18.4'></a> 연산자 사이에는 스페이스를 넣어 주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     const x=y+5;
 
@@ -1564,14 +1564,14 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [18.5](#18.5) <a name='18.5'></a> End files with a single newline character.
   - [18.5](#18.5) <a name='18.5'></a> 파일 끝에는 개행문자를 1개 넣어 주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     (function(global) {
       // ...stuff...
     })(this);
     ```
 
-    ``` javascript
+    ```javascript
     // bad
     (function(global) {
       // ...stuff...
@@ -1579,7 +1579,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
     ↵
     ```
 
-    ``` javascript
+    ```javascript
     // good
     (function(global) {
       // ...stuff...
@@ -1590,7 +1590,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
     emphasizes that the line is a method call, not a new statement.
   - [18.6](#18.6) <a name='18.6'></a> 길게 메소드를 채이닝하는 경우는 인덴트를 이용해 주십시오. 행이 새로운 문이 아닌 메소드 호출인 것을 강조하기 위해서 선두에 점 (.) 을 배치해 주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     $('#items').find('.selected').highlight().end().find('.open').updateCount();
 
@@ -1630,7 +1630,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [18.7](#18.7) <a name='18.7'></a> Leave a blank line after blocks and before the next statement.
   - [18.7](#18.7) <a name='18.7'></a> 문의 앞과 블록의 뒤에는 빈행을 남겨 주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     if (foo) {
       return bar;
@@ -1688,7 +1688,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [18.8](#18.8) <a name='18.8'></a> Do not pad your blocks with blank lines.
   - [18.8](#18.8) <a name='18.8'></a> 블록에 빈행을 끼워 넣지 마십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     function bar() {
 
@@ -1721,7 +1721,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [18.9](#18.9) <a name='18.9'></a> Do not add spaces inside parentheses.
   - [18.9](#18.9) <a name='18.9'></a> 소괄호()의 안쪽에 스페이스를 추가하지 마십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     function bar( foo ) {
       return foo;
@@ -1746,7 +1746,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [18.10](#18.10) <a name='18.10'></a> Do not add spaces inside brackets.
   - [18.10](#18.10) <a name='18.10'></a> 대괄호([])의 안쪽에 스페이스를 추가하지 마십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     const foo = [ 1, 2, 3 ];
     console.log(foo[ 0 ]);
@@ -1759,7 +1759,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [18.11](#18.11) <a name='18.11'></a> Add spaces inside curly braces.
   - [18.11](#18.11) <a name='18.11'></a> 중괄호({})의 안쪽에 스페이스를 추가해 주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     const foo = {clark: 'kent'};
 
@@ -1774,7 +1774,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [19.1](#19.1) <a name='19.1'></a> Leading commas: **Nope.**
   - [19.1](#19.1) <a name='19.1'></a> 선두의 콤마 **하지마요**
 
-    ``` javascript
+    ```javascript
     // bad
     const story = [
         once
@@ -1813,7 +1813,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
   > 왜? 이것은 깨끗한 git의 diffs 로 이어집니다. 또한 Babel과 같은 트랜스파일러는 transpile 하는 사이에 쓸데없는 끝의 콤마를 제거합니다. 이것은 레거시브라우저에서의 [불필요한 콤마 문제](./README.md#commas)를 고민할 필요가 없다는것을 의미합니다.
 
-    ``` javascript
+    ```javascript
     // bad - git diff without trailing comma
     const hero = {
          firstName: 'Florence',
@@ -1860,7 +1860,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [20.1](#20.1) <a name='20.1'></a> **Yup.**
   - [20.1](#20.1) <a name='20.1'></a> **씁시다**
 
-    ``` javascript
+    ```javascript
     // bad
     (function() {
       const name = 'Skywalker'
@@ -1894,7 +1894,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [21.2](#21.2) <a name='21.2'></a> Strings:
   - [21.2](#21.2) <a name='21.2'></a> 문자열의 경우:
 
-    ``` javascript
+    ```javascript
     //  => this.reviewScore = 9;
 
     // bad
@@ -1907,7 +1907,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [21.3](#21.3) <a name='21.3'></a> Numbers: Use `Number` for type casting and `parseInt` always with a radix for parsing strings.
   - [21.3](#21.3) <a name='21.3'></a> 수치의 경우: `Number` 로 형변환하는 경우는 `parseInt` 를 이용하고, 항상 형변환을 위한 기수를 인수로 넘겨 주십시오.
 
-    ``` javascript
+    ```javascript
     const inputValue = '4';
 
     // bad
@@ -1933,7 +1933,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [21.4](#21.4) <a name='21.4'></a> 무언가의 이유로 인해 `parseInt` 가 bottleneck 이 되어, [성능적인 이유](http://jsperf.com/coercion-vs-casting/3)로 Bitshift를 사용할 필요가 있는 경우
   하려고 했던 것에 대해, 왜(why) 와 무엇(what)의 설명을 코멘트로 해서 남겨 주십시오.
 
-    ``` javascript
+    ```javascript
     // good
     /**
      * parseInt was the reason my code was slow.
@@ -1950,7 +1950,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [21.5](#21.5) <a name='21.5'></a> **주의:** bitshift를 사용하는 경우의 주의사항. 수치는 [64비트 값](http://es5.github.io/#x4.3.19)으로 표현되어 있으나 bitshift 연산한 경우는 항상 32비트 integer 로 넘겨집니다.([소스](http://es5.github.io/#x11.7)).
   32비트 이상의 int 를 bitshift 하는 경우 예상치 못한 현상을 야기할 수 있습니다.([토론](https://github.com/airbnb/javascript/issues/109)) 부호가 포함된 32비트 정수의 최대치는 2,147,483,647 입니다.
 
-    ``` javascript
+    ```javascript
     2147483647 >> 0 //=> 2147483647
     2147483648 >> 0 //=> -2147483648
     2147483649 >> 0 //=> -2147483647
@@ -1959,7 +1959,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [21.6](#21.6) <a name='21.6'></a> Booleans:
   - [21.6](#21.6) <a name='21.6'></a> 부울값의 경우:
 
-    ``` javascript
+    ```javascript
     const age = 0;
 
     // bad
@@ -1980,7 +1980,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [22.1](#22.1) <a name='22.1'></a> Avoid single letter names. Be descriptive with your naming.
   - [22.1](#22.1) <a name='22.1'></a> 1문자의 이름은 피해 주십시오. 이름으로부터 의도가 읽혀질수 있게 해주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     function q() {
       // ...stuff...
@@ -1995,7 +1995,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [22.2](#22.2) <a name='22.2'></a> Use camelCase when naming objects, functions, and instances.
   - [22.2](#22.2) <a name='22.2'></a> 오브젝트, 함수 그리고 인스턴스에는 camelCase를 사용해 주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     const OBJEcttsssss = {};
     const this_is_my_object = {};
@@ -2009,7 +2009,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [22.3](#22.3) <a name='22.3'></a> Use PascalCase when naming constructors or classes.
   - [22.3](#22.3) <a name='22.3'></a> 클래스나 constructor에는 PascalCase 를 사용해 주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     function user(options) {
       this.name = options.name;
@@ -2034,7 +2034,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [22.4](#22.4) <a name='22.4'></a> Use a leading underscore `_` when naming private properties.
   - [22.4](#22.4) <a name='22.4'></a> private 프로퍼티명은 선두에 언더스코어 `_` 를사용해 주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     this.__firstName__ = 'Panda';
     this.firstName_ = 'Panda';
@@ -2046,7 +2046,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [22.5](#22.5) <a name='22.5'></a> Don't save references to `this`. Use arrow functions or Function#bind.
   - [22.5](#22.5) <a name='22.5'></a> `this` 의 참조를 보존하는것은 피해주십시오. arrow함수나 Function#bind 를 이용해 주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     function foo() {
       const self = this;
@@ -2074,7 +2074,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [22.6](#22.6) <a name='22.6'></a> If your file exports a single class, your filename should be exactly the name of the class.
   - [22.6](#22.6) <a name='22.6'></a> 파일을 1개의 클래스로 export 하는 경우, 파일명은 클래스명과 완전히 일치시키지 않으면 안됩니다.
 
-    ``` javascript
+    ```javascript
     // file contents
     class CheckBox {
       // ...
@@ -2095,7 +2095,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [22.7](#22.7) <a name='22.7'></a> Use camelCase when you export-default a function. Your filename should be identical to your function's name.
   - [22.7](#22.7) <a name='22.7'></a> Default export가 함수일 경우, camelCase를 이용해 주십시오. 파일명은 함수명과 동일해야 합니다.
 
-    ``` javascript
+    ```javascript
     function makeStyleGuide() {
     }
 
@@ -2105,7 +2105,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [22.8](#22.8) <a name='22.8'></a> Use PascalCase when you export a singleton / function library / bare object.
   - [22.8](#22.8) <a name='22.8'></a> singleton / function library / 빈오브젝트를 export 하는 경우, PascalCase를 이용해 주십시오.
 
-    ``` javascript
+    ```javascript
     const AirbnbStyleGuide = {
       es6: {
       }
@@ -2126,7 +2126,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [23.2](#23.2) <a name='23.2'></a> If you do make accessor functions use getVal() and setVal('hello').
   - [23.2](#23.2) <a name='23.2'></a> 억세서 함수가 필요한 경우, `getVal()` 이나 `setVal('hello')` 로 해주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     dragon.age();
 
@@ -2143,7 +2143,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [23.3](#23.3) <a name='23.3'></a> If the property is a `boolean`, use `isVal()` or `hasVal()`.
   - [23.3](#23.3) <a name='23.3'></a> 프로퍼티가 `boolean` 인 경우, `isVal()` 이나 `hasVal()` 로 해주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     if (!dragon.age()) {
       return false;
@@ -2158,7 +2158,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [23.4](#23.4) <a name='23.4'></a> It's okay to create get() and set() functions, but be consistent.
   - [23.4](#23.4) <a name='23.4'></a> 일관된 경우, `get()` 과 `set()` 으로 함수를 작성해도 좋습니다.
 
-    ``` javascript
+    ```javascript
     class Jedi {
       constructor(options = {}) {
         const lightsaber = options.lightsaber || 'blue';
@@ -2184,7 +2184,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [24.1](#24.1) <a name='24.1'></a> (DOM이벤트나 Backbone events 와 같은 독자의) 이벤트로 payload의 값을 넘길 경우는 raw값 보다는 해시값을 넘겨 주십시오.
 이렇게 함으로써, 이후 기여자가 이벤트에 관련한 모든 핸들러를 찾아서 갱신하는 대신 이벤트 payload에 값을 추가하는 것이 가능합니다. 예를들면 아래와 같이
 
-    ``` javascript
+    ```javascript
     // bad
     $(this).trigger('listingUpdated', listing.id);
 
@@ -2198,7 +2198,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
     prefer:
     이쪽이 좋습니다:
 
-    ``` javascript
+    ```javascript
     // good
     $(this).trigger('listingUpdated', { listingId: listing.id });
 
@@ -2217,7 +2217,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [25.1](#25.1) <a name='25.1'></a> Prefix jQuery object variables with a `$`.
   - [25.1](#25.1) <a name='25.1'></a> jQuery오브젝트의 변수는 선두에 `$` 를 부여해 주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     const sidebar = $('.sidebar');
 
@@ -2231,7 +2231,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [25.2](#25.2) <a name='25.2'></a> Cache jQuery lookups.
   - [25.2](#25.2) <a name='25.2'></a> jQuery의 검색결과를 캐시해 주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     function setSidebar() {
       $('.sidebar').hide();
@@ -2262,7 +2262,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
   - [25.4](#25.4) <a name='25.4'></a> Use `find` with scoped jQuery object queries.
   - [25.4](#25.4) <a name='25.4'></a> 한정된 jQuery 오브젝트 쿼리에는 `find` 를 사용해 주십시오.
 
-    ``` javascript
+    ```javascript
     // bad
     $('ul', '.sidebar').hide();
 
@@ -2312,7 +2312,7 @@ ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했
 
   - [28.1](#28.1) <a name="28.1"></a> **Yup.**
 
-    ``` javascript
+    ```javascript
     function () {
       return true;
     }
