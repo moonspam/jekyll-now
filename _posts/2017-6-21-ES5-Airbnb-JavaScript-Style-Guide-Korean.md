@@ -11,7 +11,7 @@ tag: [Javascript, ESLint, Airbnb, Guide, ES5]
 
 # Airbnb JavaScript 스타일 가이드() {
 
-## <a name='TOC'><a name='TOC'>목차</a>
+## <a name='TOC'>목차</a>
 
   1. [Types](#types)
   1. [Objects](#objects)
