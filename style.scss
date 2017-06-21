@@ -303,6 +303,8 @@ footer {
 }
 
 .tag {
+  float: left;
+  display: block;
   margin-right: 2px;
   span {
     display: inline-block;
@@ -326,6 +328,11 @@ footer {
 
 .tags {
   line-height: 2em;
+  &:after {
+    display: block;
+    clear: both;
+    content: "";
+  }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
