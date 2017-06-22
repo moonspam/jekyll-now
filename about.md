@@ -21,3 +21,9 @@ permalink: /about/
 
 ## 하는 것들
 HTML, CSS, Javscript, Saas, Less, Node.js, PHP, Grunt, Webpack, Git, Github, Slack, Trello, React(공부중)
+
+## 연결고리
+- [Github](https://github.com/moonspam)
+- [CodePen](https://codepen.io/moonspam/)
+- [LinkedIn](www.linkedin.com/in/moonspam)
+- [Old Site](http://iluku.net/)
