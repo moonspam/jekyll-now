@@ -25,5 +25,5 @@ HTML, CSS, Javscript, Saas, Less, Node.js, PHP, Grunt, Webpack, Git, Github, Sla
 ## 연결고리
 - [Github](https://github.com/moonspam)
 - [CodePen](https://codepen.io/moonspam/)
-- [LinkedIn](www.linkedin.com/in/moonspam)
+- [LinkedIn](https://www.linkedin.com/in/moonspam)
 - [Old Site](http://iluku.net/)
