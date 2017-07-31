@@ -12,9 +12,8 @@ tag: [Vuejs, Dolpic, Javascript]
 - [탁월한 프론트엔드 엔지니어가 되는 법](https://hyunseob.github.io/2016/02/21/how-to-become-a-great-frontend-engineer/)
 - [프론트엔드 개발자는 왜 구하기 어렵나요?](https://taegon.kim/archives/4810)
 
-----------
 
-<center><img src="https://kr.vuejs.org/images/logo.png" width="250" height="250"></img></center>
+<center><img src="https://kr.vuejs.org/images/logo.png" width="250" height="250"></center>
 
 ## 삽을 들다
 
@@ -22,7 +21,7 @@ tag: [Vuejs, Dolpic, Javascript]
 
 React.js와 Vue.js 중에 고민하는 찰나 친절하게 한글로 되어있는 Vue.js로 삽을 들었습니다.
 
-https://kr.vuejs.org/
+<https://kr.vuejs.org/>
 
 ## 삽질을 하다
 
@@ -58,7 +57,7 @@ $ npm run dev
 메인 페이지에서 API를 받아서 이미지를 보여주는 부분이 첫 번째 목표였습니다. 사이드와 하단 영역을 **컴포넌트로 분리**하고 **[Axios](https://github.com/mzabriskie/axios) 모듈을 이용하여 API를 받는 구조**로 그림을 그렸습니다.
 
 현재까지 작업한 저장소도 공유합니다.  
-https://github.com/moonspam/dolpic-vuejs
+<https://github.com/moonspam/dolpic-vuejs>
 
 #### src/main.js
 
@@ -146,7 +145,7 @@ Axios 모듈을 이용해 POST 방식으로 데이터를 받아와 posts에 저�
 posts에 담긴 데이터를 반복문을 사용하여 뿌려줘야 하는데, 이 부분은 얕은 지식으로 어렵지 않게 구현할 수 있었습니다.
 
 조건문과 반복문  
-https://kr.vuejs.org/v2/guide/#조건문과-반복문
+<https://kr.vuejs.org/v2/guide/#조건문과-반복문>
 
 반복문 안에 `urlType` 값에 따라 클래스 이름이 변경되는 부분이 있습니다. 이 부분은 `v-bind:class`를 이용하여 전달받는 값에 따라 클래스 이름을 지정할 수 있었습니다.  배경 이미지 주소를 `style`에 넣는 부분도 `v-bind:style`로 사용해야만 노출이 잘되었습니다.
 
@@ -170,7 +169,7 @@ https://kr.vuejs.org/v2/guide/#조건문과-반복문
 
 ...
 ```
-참고 : https://alligator.io/vuejs/dynamic-styles/
+참고 : <https://alligator.io/vuejs/dynamic-styles/>
 
 ## 삽질은 계속된다
 
