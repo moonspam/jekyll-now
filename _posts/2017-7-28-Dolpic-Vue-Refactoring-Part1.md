@@ -59,7 +59,7 @@ $ npm run dev
 현재까지 작업한 저장소도 공유합니다.  
 <https://github.com/moonspam/dolpic-vuejs>
 
-### src/main.js
+### - src/main.js
 
 ```
 import Vue from 'vue'
@@ -79,7 +79,7 @@ new Vue({
 })
 ```
 
-### src/App.vue
+### - src/App.vue
 
 ```
 <template>
@@ -109,7 +109,7 @@ export default {
 
 `<router-view>` 라우터에 대해서는 첫 번째 숙제를 끝난 후 훑어보려 합니다. 최상위 경로에서 components/Main.vue 컴포넌트를 불러오고 해당 페이지에서 API를 불러오도록 하였습니다.
 
-### /src/components/Main.vue
+### - src/components/Main.vue
 ```
 ...
 
@@ -149,6 +149,7 @@ posts에 담긴 데이터를 반복문을 사용하여 뿌려줘야 하는데, �
 
 반복문 안에 `urlType` 값에 따라 클래스 이름이 변경되는 부분이 있습니다. 이 부분은 `v-bind:class`를 이용하여 전달받는 값에 따라 클래스 이름을 지정할 수 있었습니다.  배경 이미지 주소를 `style`에 넣는 부분도 `v-bind:style`로 사용해야만 노출이 잘되었습니다.
 
+### - src/components/Main.vue
 ```
 <template>
   <div class='gbox_gallery'>
