@@ -9,11 +9,9 @@ permalink: /about/
 ## 서른즈음에
 #### Actoz Soft
 2013년 5월 - 현재
-- WEGL e스포츠 사이트 제작
-- 드래곤네스트 글로벌 사이트 제작
-- 공식 사이트 및 포럼, 프로모션 페이지 개발 및 유지 보수
-- 모바일 플랫폼 제작
-- 마크업 가이드 작성 및 템플릿 제작
+- 공식 홈페이지(WEGL, 드래곤네스트, 파판14, 라테일), 프로모션 사이트 제작 및 유지관리
+- HTML 코딩 가이드, 템플릿 제작
+- CHEF SDK 제작 지원
 
 #### 홈스테드
 2011년 5월 - 2012년 9월
@@ -25,7 +23,7 @@ permalink: /about/
 HTML, CSS, Javscript, Saas, Less, Node.js, PHP, Grunt, Webpack, Git, Github, Slack, Trello, React(공부중)
 
 ## 연결고리
+- [LinkedIn](https://www.linkedin.com/in/moonspam)
 - [Github](https://github.com/moonspam)
 - [CodePen](https://codepen.io/moonspam/)
-- [LinkedIn](https://www.linkedin.com/in/moonspam)
 - [Old Site](http://iluku.net/)
