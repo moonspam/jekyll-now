@@ -24,13 +24,13 @@ tag: [NotoSans, Fonts]
 ### link 방식 (권장)
 
 ``` html
-<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/earlyaccess/notosanskr.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
 ```
 
 ### import 방식
 
 ``` css
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
 ```
 
 ## 적용
