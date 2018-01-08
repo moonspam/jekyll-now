@@ -7,6 +7,8 @@ tag: [Javascript, Nodejs]
 인간으로 태어나 가장 큰 고민거리인 **오늘 점심 뭐 먹지?** 에 대한 고민을 해결하기 위해 만들어 보았습니다.  
 사실 회사에서 점심 고르는 게 힘들어서 만들었다는 후문이….
 
+http://lunch.moonspam.me/
+
 # Prototype
 바야흐로 3년전 cafe24 호스팅을 이용 중이어서 PHP로 간단하게 만들어보자며 굳은 의지와 함께 틈틈이 코딩했습니다.  
 나름 핵심기능이었던 부분은 음식점에 확률값을 넣는 부분이었습니다.
@@ -21,7 +23,7 @@ tag: [Javascript, Nodejs]
 
 # v1.0
 
-http://lunch.moonspam.me/
+https://github.com/moonspam/Node-Study-lunch
 
 음식점리스트를 누르면 정보가 보이게끔 구현하고 싶었고 Node.js도 겉핥기로 배웠지만 써먹어 보자는 의지와 함께 틈틈이 키보드를 두들겼습니다.  
 버전업한 내용은 나름 그럴싸합니다.
