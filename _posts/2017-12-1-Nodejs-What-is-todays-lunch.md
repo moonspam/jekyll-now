@@ -5,7 +5,9 @@ tag: [Javascript, Nodejs]
 ---
 
 인간으로 태어나 가장 큰 고민거리인 **오늘 점심 뭐 먹지?** 에 대한 고민을 해결하기 위해 만들어 보았습니다.  
-사실 회사에서 점심 고르는 게 힘들어서 만들었다는 후문이….
+사실 회사에서 점심 고르는 게 힘들어서 만들었다는 후문이…. 🤣
+
+![yam](https://media.giphy.com/media/l0HlDgg6jypfnVejC/giphy.gif)
 
 http://lunch.moonspam.me/
 
@@ -26,7 +28,7 @@ http://lunch.moonspam.me/
 https://github.com/moonspam/Node-Study-lunch
 
 음식점리스트를 누르면 정보가 보이게끔 구현하고 싶었고 Node.js도 겉핥기로 배웠지만 써먹어 보자는 의지와 함께 틈틈이 키보드를 두들겼습니다.  
-버전업한 내용은 나름 그럴싸합니다.
+버전업한 내용은 나름 그럴싸합니다. 😥
 
 - node.js를 이용하여 SPA(Single Page Application) 구현
 - npm, bower를 통한 패키지 관리
