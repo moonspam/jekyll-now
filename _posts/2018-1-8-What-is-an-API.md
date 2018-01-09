@@ -52,9 +52,8 @@ API를 어떻게 쓰는지 예를 들어 작성해 보겠습니다.
 
 [🔗]: http://openweathermap.org/api
 
-```
-http://api.openweathermap.org/data/2.5/weather?q={{지역}}&appid={{인증키}}
-
+``` javascript
+var api = "http://api.openweathermap.org/data/2.5/weather?q={{지역}}&appid={{인증키}}";
 ```
 
 `jQuery.getJSON()`를 이용하여 요청한 API 정보를 HTML 내 출력하는 예시를 작성해 보았습니다.
