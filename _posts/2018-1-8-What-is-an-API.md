@@ -4,7 +4,7 @@ title: API 쉽게 이해하기
 tag: [API, Javascript]
 ---
 
-개발자와 회의하다 보면 `API`라는 단어를 종종 듣게 됩니다. 저도 공부 겸 `API`란 무엇인지 쉽게 풀어 정리해 보겠습니다.
+개발자와 회의하다 보면 `API`라는 단어를 종종 듣게 됩니다. 공부 겸 `API`란 무엇인지 쉽게 풀어 정리해 보겠습니다.
 
 # API란?
 
@@ -18,7 +18,7 @@ tag: [API, Javascript]
 
 ![animation](https://media.giphy.com/media/3o6ZsYRW7iRixVPeRq/giphy.gif)
 
-1. 레스토랑에서 `손님`은 무엇을 먹을지 <u>메뉴를 선택</u>하게 됩니다.
+1. `손님`은 무엇을 먹을지 <u>메뉴를 선택</u>하게 됩니다.
 2. `웨이터`를 불러 <u>음식을 주문</u>합니다.
 3. `웨이터`는 `셰프`에게 <u>음식을 요청</u>합니다.
 4. `셰프`는 요리가 끝난 후 `웨이터`에게 <u>음식을 전달</u>합니다.
@@ -40,13 +40,13 @@ API를 어떻게 쓰는지 예를 들어 작성해 보겠습니다.
 - Naver Developers : https://developers.naver.com/
 - OpenWeatherMap : http://openweathermap.org/
 
-날씨 정보를 제공하는 **OpenWeatherMap**의 샘플 `API`를 이용해 현재 런던 날씨 정보를 알아보겠습니다.
+날씨 정보를 제공하는 **OpenWeatherMap**의 `API`를 이용해 런던의 날씨 정보를 알아보겠습니다.
 
 # API 사용하기
 
-레스토랑의 이야기를 토대로 설명해보자면, 런던의 현재 날씨를 보여주는 **응용 프로그램**을 만들기 위해 OpenWeatherMap 이라는 **운용 체제**의 `API`를 이용해 정보를 제공 받게 됩니다.
+레스토랑의 이야기를 토대로 설명해보자면, 런던의 현재 날씨를 보여주는 **응용 프로그램**을 만들기 위해 OpenWeatherMap 이라는 **운용 체제**의 `API`를 통해 정보를 제공 받게 됩니다.
 
-## 실습 예제
+## jQuery 예제
 
 현재 날씨 정보를 받아오기 위한 API 주소는 아래와 같은 형식으로 구성됩니다. [🔗]
 
@@ -60,3 +60,9 @@ var api = "//api.openweathermap.org/data/2.5/weather?q=지역&appid=인증키";
 
 <p data-height="300" data-theme-id="0" data-slug-hash="baLVxM" data-default-tab="js,result" data-user="moonspam" data-embed-version="2" data-pen-title="OpenWeatherMap API Sample" class="codepen">See the Pen <a href="https://codepen.io/moonspam/pen/baLVxM/">OpenWeatherMap API Sample</a> by moonspam (<a href="https://codepen.io/moonspam">@moonspam</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+# 정리
+
+`API`는 어렵고 복잡한 과정을 쉽게 전달받을 수 있도록 만들어주는 다리 역할을 해줌으로써 작업을 빠르고 간결하게 진행할 수 있습니다.
+
+![easy](https://media.giphy.com/media/ZgzrLrlGf5ENW/giphy.gif)
