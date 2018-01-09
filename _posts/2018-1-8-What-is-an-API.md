@@ -1,7 +1,7 @@
 ---
 layout: post
 title: API 쉽게 이해하기
-tag: [API]
+tag: [API, Javascript]
 ---
 
 개발자와 회의하다 보면 `API`라는 단어를 종종 듣게 됩니다. 저도 공부 겸 `API`란 무엇인지 쉽게 풀어 정리해 보겠습니다.
@@ -53,7 +53,7 @@ API를 어떻게 쓰는지 예를 들어 작성해 보겠습니다.
 [🔗]: http://openweathermap.org/api
 
 ``` javascript
-var api = "http://api.openweathermap.org/data/2.5/weather?q={{지역}}&appid={{인증키}}";
+var api = "http://api.openweathermap.org/data/2.5/weather?q=지역&appid=인증키";
 ```
 
 `jQuery.getJSON()`를 이용하여 요청한 API 정보를 HTML 내 출력하는 예시를 작성해 보았습니다.
