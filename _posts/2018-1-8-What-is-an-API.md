@@ -63,6 +63,6 @@ var api = "//api.openweathermap.org/data/2.5/weather?q=지역&appid=인증키";
 
 # 정리
 
-`API`는 어렵고 복잡한 과정을 쉽게 전달받을 수 있도록 만들어주는 다리 역할을 해줌으로써 작업을 빠르고 간결하게 진행할 수 있습니다.
+`API`는 어렵고 복잡한 과정을 쉽게 전달받을 수 있도록 만들어주는 다리 역할을 해줌으로써 작업을 빠르고 간결하게 진행할 수 있습니다. 👍👍👍
 
 ![easy](https://media.giphy.com/media/ZgzrLrlGf5ENW/giphy.gif)
