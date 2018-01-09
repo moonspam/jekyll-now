@@ -33,30 +33,31 @@ tag: [API]
 API를 어떻게 쓰는지 예를 들어 작성해 보겠습니다.  
 먼저 무료로 사용할 수 있는 오픈 API 사이트 몇 곳을 소개합니다.
 
+> API를 무료로 이용할 수 있다고 해도 본인 인증할 수 있는 키가 필요하며, 몇 번까지 **무료** 초과 이용 시 **유료**인 API도 있습니다.
+
 - 공공데이터포털 : https://www.data.go.kr/
 - Kakao Developers : https://developers.kakao.com/
 - Naver Developers : https://developers.naver.com/
 - OpenWeatherMap : http://openweathermap.org/
 
-> API를 무료로 이용할 수 있다고 해도 본인 인증할 수 있는 키가 필요하며, 몇 번까지 **무료** 초과 이용 시 **유료**인 API도 있습니다.
-
 날씨 정보를 제공하는 **OpenWeatherMap**의 샘플 `API`를 이용해 현재 런던 날씨 정보를 알아보겠습니다.
 
 # API 사용하기
 
-레스토랑의 이야기를 토대로 설명해보자면, 런던의 현재 날씨를 보여주는 **응용 프로그램**을 만들기 위해 OpenWeatherMap 이라는 **운용 체제**의 `API`를 통해 정보를 받게 됩니다.
+레스토랑의 이야기를 토대로 설명해보자면, 런던의 현재 날씨를 보여주는 **응용 프로그램**을 만들기 위해 OpenWeatherMap 이라는 **운용 체제**의 `API`를 이용해 정보를 제공 받게 됩니다.
 
 ## 실습 예제
 
-가이드 문서[🌐1]에 현재 날씨 정보를 받아오기 위한 API 주소는 아래와 같은 형식으로 구성됩니다.
+현재 날씨 정보를 받아오기 위한 API 주소는 아래와 같은 형식으로 구성됩니다. [🔗]
 
-[🌐1]: http://openweathermap.org/api
+[🔗]: http://openweathermap.org/api
 
-`http://api.openweathermap.org/data/2.5/weather?q={{지역}}&appid={{인증키}}`
+```
+http://api.openweathermap.org/data/2.5/weather?q={{지역}}&appid={{인증키}}
 
-`jQuery.getJSON()`[🌐2]를 이용하여 요청한 API 정보를 HTML 내 출력하는 예시를 작성해 보았습니다.
+```
 
-[🌐2]: http://openweathermap.org/api
+`jQuery.getJSON()`를 이용하여 요청한 API 정보를 HTML 내 출력하는 예시를 작성해 보았습니다.
 
 <p data-height="300" data-theme-id="0" data-slug-hash="baLVxM" data-default-tab="js,result" data-user="moonspam" data-embed-version="2" data-pen-title="OpenWeatherMap API Sample" class="codepen">See the Pen <a href="https://codepen.io/moonspam/pen/baLVxM/">OpenWeatherMap API Sample</a> by moonspam (<a href="https://codepen.io/moonspam">@moonspam</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
