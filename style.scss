@@ -255,6 +255,7 @@ nav {
 }
 
 .post {
+  word-break: break-all;
   blockquote {
     margin: 1em 0;
     border-left: 2px solid $gray;
