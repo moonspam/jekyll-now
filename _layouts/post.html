@@ -15,11 +15,11 @@ layout: default
 {{ content }}
 </div>
 
+{% include ad.html %}
+
 <div class="date">
 <i class="fa fa-clock"></i> Written on {{ page.date | date: "%B %e, %Y" }}
 </div>
-
-{% include ad.html %}
 
 {% include disqus.html %}
 </article>
