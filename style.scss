@@ -334,6 +334,12 @@ footer {
     clear: both;
     content: "";
   }
+  > i {
+    float: left;
+    margin-right: 4px;
+    font-size: 1.25em;
+    line-height: 1.25em;
+  }
 }
 
 .gist .blob-wrapper.data {
