@@ -2,8 +2,6 @@
 layout: default
 ---
 
-{% include ad.html %}
-
 <article class="post">
 <h1>{{ page.title }}</h1>
 
@@ -19,6 +17,8 @@ layout: default
 <div class="date">
 Written on {{ page.date | date: "%B %e, %Y" }}
 </div>
+
+{% include ad.html %}
 
 {% include disqus.html %}
 </article>
