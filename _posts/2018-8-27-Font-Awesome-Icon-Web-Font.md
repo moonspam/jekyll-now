@@ -49,12 +49,16 @@ tag: [Fonts, FontAwesome]
 
 [Solid](https://fontawesome.com/icons?s=solid)와 [Brands](https://fontawesome.com/icons?s=brands)는 **무료**로 사용할 수 있고, [Regular](https://fontawesome.com/icons?s=regular)와 [Light](https://fontawesome.com/icons?s=light)는 **Pro 버전 구매** 시 이용 가능합니다.
 
+<div class="table">
+
 | 스타일  | 라이선스  | 접두사 | 예시                                            | 아이콘                              |
 | ------- | --------- | ------ | ----------------------------------------------- | :---------------------------------: |
 | Solid   | 무료      | fas    | &lt;i class="fas fa-stroopwafel"&gt;&lt;/i&gt;  | <i class="fas fa-stroopwafel"></i>  |
 | Regular | 유료(Pro) | far    | &lt;i class="far fa-stroopwafel"&gt;&lt;/i&gt;  | Pro 구매 시 적용 가능               |
 | Light   | 유료(Pro) | fal    | &lt;i class="fal fa-stroopwafel"&gt;&lt;/i&gt;  | Pro 구매 시 적용 가능               |
 | Brands  | 무료      | fab    | &lt;i class="fab fa-font-awesome"&gt;&lt;/i&gt; | <i class="fab fa-font-awesome"></i> |
+
+</div>
 
 ## 아이콘 검색하기
 
