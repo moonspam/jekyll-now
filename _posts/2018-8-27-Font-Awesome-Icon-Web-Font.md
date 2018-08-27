@@ -12,7 +12,7 @@ tag: [Fonts, FontAwesome]
 
 폰트어썸은 1,200여 개 무료 아이콘과 2,300여 개의 유료(Pro) 아이콘 세트로 구성되어 있으며, 따로 파일을 받을 필요 없이 CSS 파일을 불러오기만 하면 해당 아이콘 세트를 사용할 수 있습니다.
 
-<span style="font-size:3em"><i class="fab fa-fort-awesome-alt"></i></span>
+<i class="fab fa-fort-awesome-alt"></i> <https://fontawesome.com/>
 
 ## 폰트어썸 설정하기
 
