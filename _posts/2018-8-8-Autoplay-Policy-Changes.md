@@ -17,7 +17,7 @@ tag: [API, Chrome, YouTube]
 
 위 정책에 맞게 영상 BG 작업 시 HTML5 video 태그나 YouTube iframe에 음소거 하는 방법을 공유합니다.
 
-# HTML `video` Tag
+## HTML `video` Tag
 
 `video` 태그 내 muted 속성 추가
 
@@ -25,7 +25,7 @@ tag: [API, Chrome, YouTube]
 <video muted autoplay loop>
 ```
 
-# YouTube `iframe` Tag
+## YouTube `iframe` Tag
 
 `iframe` `src` 속성에 `&amp;mute=1` 추가
 
