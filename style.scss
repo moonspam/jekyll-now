@@ -121,6 +121,7 @@ table {
   color: lighten(#111, 18%);
   border-collapse: collapse;
   border: 1px solid lighten(#828282, 40%);
+  overflow: auto;
   tr {
     &:nth-child(even) {
       background-color: lighten(lighten(#828282, 40%), 6%);
