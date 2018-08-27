@@ -14,7 +14,7 @@ Jekll를 둘러보는데 Ruby를 설치해야 하고 여러모로 귀찮아서 <
 ![jekyll now](https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/step1.gif)
 > 요로코롬 쉽다.
 
-# 난 누군가 또 여긴 어딘가
+## 난 누군가 또 여긴 어딘가
 
 나에 대해선 [About](/about/) 페이지를 봐주시라!
 
