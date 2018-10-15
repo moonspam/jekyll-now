@@ -19,18 +19,22 @@ Regular(400), Bold(700), Extra Bold(800), Light(300) 지원됩니다.
 #### link 방식 (권장)
 
 ``` html
-<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
 ```
 
 #### import 방식
 
 ``` css
-@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 ```
 
 ### 적용
 
 <p data-height="350" data-theme-id="dark" data-slug-hash="rwMRVW" data-default-tab="result" data-user="moonspam" data-embed-version="2" data-pen-title="rwMRVW" class="codepen">See the Pen <a href="https://codepen.io/moonspam/pen/rwMRVW/">rwMRVW</a> by moonspam (<a href="https://codepen.io/moonspam">@moonspam</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async="async" src="//codepen.io/assets/embed/ei.js"></script>
+
+#### Update
+
+RawGit 서비스 종료로 jsDelivr CDN 주소를 변경하였습니다.
 
 출처: <https://github.com/moonspam/NanumSquare>
