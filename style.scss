@@ -19,7 +19,7 @@ html {
 
 body {
   background: $white;
-  font: 16px/1.4 $barunGothic;
+  font: 18px/1.5 $barunGothic;
   color: $darkGray;
   @include mobile {
     font-size: 14px;
@@ -236,7 +236,7 @@ table {
 }
 
 .site-description {
-  margin: -5px 0 0 0;
+  margin: -10px 0 0 0;
   color: $gray;
   font-size: 1em;
 
