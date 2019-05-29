@@ -30,7 +30,7 @@ permalink: /about/
 
 ## 하는 것들
 
-HTML, CSS, Javscript, Saas, Less, Node.js, PHP, Grunt, Webpack, Git, Github, Slack, Trello, React(공부중)
+HTML, CSS, Javscript, Sass, Less, Node.js, PHP, Grunt, Webpack, Git, Github, Slack, Trello, React(공부중)
 
 ## 연결고리
 
