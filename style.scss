@@ -20,6 +20,7 @@ html {
 body {
   background: $white;
   font: 18px/1.5 $barunGothic;
+  letter-spacing: -0.025em;
   color: $darkGray;
   @include mobile {
     font-size: 14px;
