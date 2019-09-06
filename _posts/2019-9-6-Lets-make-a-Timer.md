@@ -9,7 +9,7 @@ tag: [Vuejs, Javascript, Firebase]
 
 ![8-bit Timer](https://user-images.githubusercontent.com/15099135/62300351-972c8880-b4b1-11e9-966a-1363ebee75e6.jpg)
 
-https://timer.moonspam.com/
+<https://timer.moonspam.com/>
 
 ## 일단 만들어 보자
 
@@ -36,7 +36,7 @@ vue ui
 
 ![Vue UI](https://user-images.githubusercontent.com/15099135/64396788-c7aba780-d099-11e9-8592-fa1fec03b0b6.png)
 
-Vue 프로젝트 매니저를 통해 기본 템플릿을 설정하고 서버를 구동하며 시작이 반이라고 반이나 했다!라는 생각도 잠시...  
+Vue 프로젝트 매니저를 통해 기본 템플릿을 설정하고 서버를 구동하며 시작이 반이라고 반이나 했다!라는 생각도 잠시...
 setInterval로 시간을 1초씩 차감하면 될 거라고 생각했지만 어떻게 구성하여 풀어나가야 할지 막막했습니다.
 
 이미 제작된 여러 타이머 소스들을 보던 와중 쉽고 이해하기 편한 예시를 찾았습니다.  
@@ -53,7 +53,7 @@ on <a href="https://codepen.io">CodePen</a>.</span>
 
 ## 예쁘게 꾸며보자
 
-조금 코딩하고 바로 꾸미기에 돌입! 주로 모바일로 볼 거라 페이지 레이아웃을 `display: flex`를 이용해 제작했습니다.  
+조금 코딩하고 바로 꾸미기에 돌입! 주로 모바일로 볼 거라 페이지 레이아웃을 `display: flex`를 이용해 제작했습니다.
 flex를 이용해 한땀 한땀 width 값을 넣지 않아도 알아서 조절되고 여러 줄을 써서 가운데 정렬했던 부분을 한 줄로 끝내는 등 편리한 부분이 많았습니다.  
 언젠간 사용해봐야지 했던 [NES.css](https://nostalgic-css.github.io/NES.css/)도 적용하여 레트로 스타일 레이아웃 완성!
 
@@ -62,15 +62,11 @@ flex를 이용해 한땀 한땀 width 값을 넣지 않아도 알아서 조절�
 Vue.js 공식 문서를 보면서 꾸역꾸역 완성할 때 즈음 모바일에서 테스트해보니 추가하고 싶은 부분들 발생...  
 작업 중에 추가한 기능들을 나열해 보았습니다.
 
-- 전체 화면 구현 스크립트 추가  
-<https://developers.google.com/web/fundamentals/native-hardware/fullscreen/?hl=ko>
-- 모바일에서 화면 안 꺼지게 해주는 기능 추가  
-<https://github.com/richtr/NoSleep.js/>
+- 전체 화면 구현 스크립트 추가 [🔗](https://developers.google.com/web/fundamentals/native-hardware/fullscreen/?hl=ko)
+- 모바일에서 화면 안 꺼지게 해주는 기능 추가 [🔗](https://github.com/richtr/NoSleep.js/)
 - 남은 시간 5분, 정각에 진동 울리기 추가 (iOS에서는 안됨)
-- `dialog` 태그를 사용하기 위한 dialog-polyfill  
-<https://github.com/GoogleChrome/dialog-polyfill>
-- 파비콘을 쉽게 넣고 싶어서 찾은 favicon.io  
-<https://favicon.io/>
+- `dialog` 태그를 사용하기 위한 dialog-polyfill [🔗](https://github.com/GoogleChrome/dialog-polyfill)
+- 파비콘을 쉽게 넣고 싶어서 찾은 favicon.io [🔗](https://favicon.io/)
 
 ## 후기
 
