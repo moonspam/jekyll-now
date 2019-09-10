@@ -4,7 +4,8 @@ title: 나눔 고딕 웹 폰트에 대한 고찰
 tag: [NanumGothic, Fonts]
 ---
 
-굴림과 돋움의 고인물이 될 무렵 나눔 고딕이 세상에 나오고 한글 웹 폰트의 부흥이 시작되었다는...(뇌피셜) 구글 폰트 [Early Access](https://fonts.google.com/earlyaccess) 사이트에서 나눔 고딕이 올라오자마자 여러 사이트에서 나눔 고딕을 사용하였고, 2018년부터 정식으로 구글 폰트에서 이용할 수 있습니다.
+굴림과 돋움의 고인물이 될 무렵 나눔 고딕이 세상에 나오고 한글 웹 폰트의 부흥이 시작되었다는...  
+(뇌피셜) 구글 폰트 [Early Access](https://fonts.google.com/earlyaccess) 사이트에서 나눔 고딕이 올라오자마자 여러 사이트에서 나눔 고딕을 사용하였고, 2018년부터 정식으로 구글 폰트에서 이용할 수 있습니다.
 
 <https://fonts.google.com/specimen/Nanum+Gothic>
 
@@ -12,7 +13,8 @@ tag: [NanumGothic, Fonts]
 
 한글 웹 폰트의 단점은 용량이 크다는 점인데, 이 부분을 해결하려고 여러 방법을 고민했었습니다. 필요한 글자만 추출해서 사용하는 경량화(subset) 작업이나 웹 폰트에서 경량화된 폰트를 제공해주는 케이스가 있었습니다. (예: 나눔 스퀘어) 나눔 스퀘어같이 경량화된 웹 폰트를 제공해주는 케이스가 많이 없었기 때문에, 서브셋 폰트를 한번 만들어 놓으면 사골 끓이듯 쓰고 또 썼습니다.
 
-다행히 구글에서 머신 러닝에 기반으로 패턴에 따라 한글 폰트를 나눠서 불러오는 방식을 도입하여 위 문제들을 어느 정도 해소해주고 있습니다. `unicode-range`를 이용하여 폰트를 여러 개로 쪼갤 생각을 했다니 구글스 칭찬해! 그리하여 어마어마한 용량을 자랑하는 `Noto Sans KR`도 부담 없이 사용 중입니다.
+다행히 구글에서 머신 러닝에 기반으로 패턴에 따라 한글 폰트를 나눠서 불러오는 방식을 도입하여 위 문제들을 어느 정도 해소해주고 있습니다. `unicode-range`를 이용하여 폰트를 여러 개로 쪼갤 생각을 했다니 구글스 칭찬해! 👍  
+그리하여 어마어마한 용량을 자랑하는 `Noto Sans KR`도 부담 없이 사용 중입니다.
 
 ## 나눔... 나눔 고딕을 보자
 
@@ -22,9 +24,9 @@ tag: [NanumGothic, Fonts]
 
 CSS `font-family` 속성에서 PC에 설치되어 있는 나눔 고딕을 먼저 선언해놓으면 뒤에 선언되어있는 웹 폰트를 브라우저에서 받지 않습니다. 하지만 OS 별 브라우저마다 인식하는 나눔 고딕 이름의 차이가 있기 때문에 한글과 영문을 동시에 선언하여 처리해주면 깔끔하게 해결됩니다.
 
-| IE | Firefox | Chrome | Safari | Opera | Safari(Mac) | Firefox(Mac) | Chrome(Mac) |
-|---|---|---|---|---|---|---|---|
-| 나눔고딕 | O | O | O | O | X | O | X |
+|   | IE | Firefox | Chrome | Safari | Opera | Safari(Mac) | Firefox(Mac) | Chrome(Mac) |
+|---|---|---|---|---|---|---|---|---|
+| 나눔고딕 | O | O | O | O | O | X | O | X |
 | NanumGothic | O | O | X | O | X | O | O | O |
 
 > 출처: <http://www.beautifulcss.com/archives/431>
@@ -59,7 +61,7 @@ strong {
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="result" data-user="moonspam" data-slug-hash="YzKedPp" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="NanumGothic Test">
+<p class="codepen" data-height="350" data-theme-id="light" data-default-tab="result" data-user="moonspam" data-slug-hash="YzKedPp" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="NanumGothic Test">
   <span>See the Pen <a href="https://codepen.io/moonspam/pen/YzKedPp/">
   NanumGothic Test</a> by moonspam (<a href="https://codepen.io/moonspam">@moonspam</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
