@@ -73,7 +73,7 @@ vue.js에 내장되어있는 [키 수식어](https://kr.vuejs.org/v2/guide/event
 
 아 완성된 결과물은 아래엣 :-D
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="js,result" data-user="moonspam" data-slug-hash="WNNJRbd" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Vue.js Example - Autocomplete">
+<p class="codepen" data-height="500" data-theme-id="light" data-default-tab="js,result" data-user="moonspam" data-slug-hash="WNNJRbd" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Vue.js Example - Autocomplete">
   <span>See the Pen <a href="https://codepen.io/moonspam/pen/WNNJRbd">
   Vue.js Example - Autocomplete</a> by moonspam (<a href="https://codepen.io/moonspam">@moonspam</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
