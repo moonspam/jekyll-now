@@ -1,7 +1,4 @@
 ---
-published: false
----
----
 layout: post
 title: 돌아보는 2020년
 tag: [Retrospective, RemoteWork]
