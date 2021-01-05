@@ -11,12 +11,12 @@ tag: [Retrospective, RemoteWork]
 급격한 확진자 수로 2월부터 재택근무를 하게 되었다. 원격설정과 VPN 설치, 화상회의 등 처음이라 버벅댔지만, 생각보다 빠르게 재택근무에 적응했다. 안정적인 환경을 구축해준 회사에 감사하고 있다.
 8년 가까이 함께한 할아버지 컴퓨터도 이사와 재택근무를 이유로 새 컴퓨터로 변신하였다. 사양은 아래와 같다.
 
-CPU : AMD Ryzen 5 3600  
-메인보드 : GIGABYTE B450 AORUS ELITE  
-RAM : 삼성전자 DDR4 16G PC4-21300 x 2  
-GPU : 갤럭시 지포스 RTX 2070 SUPER EX WHITE OC D6 8GB  
-SSD : HP EX950 M.2 2280 (1TB)  
-파워 : 시소닉 FOCUS GOLD GX-650 Full Modular
+- CPU : AMD Ryzen 5 3600  
+- 메인보드 : GIGABYTE B450 AORUS ELITE  
+- RAM : 삼성전자 DDR4 16G PC4-21300 x 2  
+- GPU : 갤럭시 지포스 RTX 2070 SUPER EX WHITE OC D6 8GB  
+- SSD : HP EX950 M.2 2280 (1TB)  
+- 파워 : 시소닉 FOCUS GOLD GX-650 Full Modular
 
 원격 근무로 개발을 하고 있어 높은 사양일 필요는 없지만 사이버 펑크 2077을 돌려보고 싶은 마음에 살짝 욕심을 부렸다. 버그 덩어리 게임이지만 그래픽에 대만족하며 즐기는 중이다.
 
